@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --bg-primary: black;
+  --font-primary: black;
+  --font-secondary: lightgrey;
+  --available-black: black;
+  --available-beige: beige;
+  --available-red: red;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: var(--bg-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card {
+  width: 800px;
+  height: 500px;
+  margin-top: 120px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.left-img-col {
+    height: 500px;
+}
+
+.left-img-col img {
+  object-fit: fill;
+
+  width: 400px;
+  height: 100%;
+}
+
+.right-info-col {
+  padding: 20px;
+}
+
+.right-info-col h3 {
+  margin-bottom: 15px;
+  font-size: 32px;
+  color: var(--font-primary);
+}
+
+.right-info-col h5 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: var(--font-secondary);
+}
+
+.right-info-col p {
+  padding-left: 50px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: var(--font-primary);
+}
+
+.available-colors {
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.available-colors span {
+  font-size: 14px;
+  color: var(--font-primary);
+}
+
+.black-color-container {
+  background: var(--available-black);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.red-color-container {
+  background: var(--available-red);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.white-color-container {
+  background: var(--available-beige);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.price {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price h4 {
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--font-primary);
+}
+
+.buy-btn {
+  width: 150px;
+  height: 40px;
+  background-color: var(--bg-primary);
+  color: white;
+  border: none;
+  border-radius: 13px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.buy-btn:hover {
+    background: white;
+    color: var(--font-primary);
+    border: solid 1px;
+    border-color: var(--font-primary);
+}
